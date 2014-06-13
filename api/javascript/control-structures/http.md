@@ -80,7 +80,7 @@ See [the tutorial](/docs/external-api-access/) on `r.http` for more examples on 
 
    At the moment, the only supported built-in is `'link-next'`, which is equivalent to `function(info) { return info('header')('link')('rel="next"').default(null); }`.
 
-    __Example:__ Perform a Github search and collect up to 3 pages of results.
+    __Example:__ Perform a GitHub search and collect up to 3 pages of results.
 
     ```js
     r.http("https://api.github.com/search/code?q=addClass+user:mozilla",
@@ -144,7 +144,7 @@ r.table('data').map(function(row) {
 }).run(conn, callback)
 ```
 
-__Example:__ Perform a `POST` request containing a value.
+__Example:__ Perform a `POST` request with accompanying data.
 
 Using form-encoded data:
 
